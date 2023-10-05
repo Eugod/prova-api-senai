@@ -1,0 +1,39 @@
+.logo {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0 1em;
+}
+
+.li-link {
+    display: flex;
+    text-decoration: none;
+    height: 5em;
+    margin: 1.5em 0;
+    align-items: center;
+}
+
+.div-container-nome {
+    margin-left: 1em;
+}
+
+.nomeTime,
+.apelidoTime {
+    color: #000000;
+    margin: 0;
+}
+
+.nomeTime {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.apelidoTime {
+    font-size: 0.8em;
+    color: #6d6b6b;
+}
