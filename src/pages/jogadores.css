@@ -1,0 +1,20 @@
+.nomeTime {
+    font-size: 2.5em;
+    padding-top: 0.6em;
+}
+
+.jogador {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.fotoJogador {
+    width: 7em;
+}
+
+.nomeJogador {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
