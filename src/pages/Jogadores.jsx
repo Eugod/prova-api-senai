@@ -4,6 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import "./jogadores.css";
 
 const logo = "https://logodownload.org/wp-content/uploads/2017/05/cartola-fc-logo-5.png";
 
@@ -44,7 +45,7 @@ export default function Jogadores() {
                 {
                     jogadoresFiltrados && jogadoresFiltrados.length > 0 && (
                         <ul className="card">
-                            <h2>Jogadores do {nomeTime}</h2>
+                            <h2 className="nomeTime">Jogadores do {nomeTime}</h2>
                             {
                                 jogadoresFiltrados.map((jogador, i) => {
                                     let foto = jogador.foto;
@@ -54,9 +55,10 @@ export default function Jogadores() {
                                     }
 
                                     return (
-                                        <li key={i}>
-                                            {foto && <img src={foto} alt="" />}
-                                            <p>
+                                        <li className="jogador" key={i}>
+                                            {foto && <img src={foto} className="fotoJogador" />}
+                                            
+                                            <p className="nomeJogador">
                                                 {jogador.apelido}
                                             </p>
                                         </li>
